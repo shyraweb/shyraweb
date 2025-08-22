@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import CustomStyles from "@/components/SharedComponents/CustomStyles";
+import TailwindScript from "@/components/SharedComponents/TailwindScript"
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +30,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <TailwindScript />
+        <CustomStyles />
         {children}
+        <Toaster />
       </body>
     </html>
   );

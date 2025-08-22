@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 via-indigo-500 to-purple-600 relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="animate-float">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Profile" class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-white shadow-2xl transform hover:scale-105 transition duration-300">
+            </div>
+            <h1 class="text-6xl font-extrabold text-white mb-4 tracking-tight">John Doe</h1>
+            <p class="text-3xl text-blue-100 mb-8 font-light">Senior Frontend Developer & UI Designer</p>
+            <div class="flex justify-center space-x-6">
+                <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 hover:shadow-lg">Download Resume</button>
+                <button class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 hover:bg-white hover:text-blue-600">Contact Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold text-gray-800 dark:text-white">About Me</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300">Passionate frontend developer with 5+ years of experience crafting beautiful and functional web experiences. Focused on creating user-centric designs that solve real problems.</p>
+                <div class="flex space-x-4">
+                    <span class="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full">Creative</span>
+                    <span class="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full">Detail-oriented</span>
+                    <span class="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full">Team Player</span>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt="Working" class="rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-16">Experience</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="relative wrap overflow-hidden p-10">
+                    <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border left-1/2"></div>
+                    
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                        </div>
+                        <div class="order-1 w-5/12 px-6 py-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl">
+                            <h3 class="font-bold text-gray-800 dark:text-white text-xl">Google</h3>
+                            <p class="text-sm text-blue-600 dark:text-blue-400">2021 - Present</p>
+                            <p class="text-gray-600 dark:text-gray-300 mt-2">Senior Frontend Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
+                        </div>
+                        <div class="order-1 w-5/12 px-6 py-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl">
+                            <h3 class="font-bold text-gray-800 dark:text-white text-xl">Microsoft</h3>
+                            <p class="text-sm text-blue-600 dark:text-blue-400">2019 - 2021</p>
+                            <p class="text-gray-600 dark:text-gray-300 mt-2">Frontend Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                        </div>
+                        <div class="order-1 w-5/12 px-6 py-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl">
+                            <h3 class="font-bold text-gray-800 dark:text-white text-xl">Apple</h3>
+                            <p class="text-sm text-blue-600 dark:text-blue-400">2017 - 2019</p>
+                            <p class="text-gray-600 dark:text-gray-300 mt-2">Junior Frontend Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-16">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Frontend</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600 dark:text-gray-300">HTML5/CSS3</span>
+                            <span class="text-blue-600">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600 dark:text-gray-300">JavaScript</span>
+                            <span class="text-blue-600">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600 dark:text-gray-300">React</span>
+                            <span class="text-blue-600">85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Backend</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600 dark:text-gray-300">Node.js</span>
+                            <span class="text-blue-600">80%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600 dark:text-gray-300">Express</span>
+                            <span class="text-blue-600">75%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Tools</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600 dark:text-gray-300">Git</span>
+                            <span class="text-blue-600">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600 dark:text-gray-300">Docker</span>
+                            <span class="text-blue-600">70%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Design</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600 dark:text-gray-300">Figma</span>
+                            <span class="text-blue-600">85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600 dark:text-gray-300">Adobe XD</span>
+                            <span class="text-blue-600">80%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-16">Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">E-commerce Platform</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Modern e-commerce solution with React and Node.js</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-sm">React</span>
+                            <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded text-sm">Node.js</span>
+                            <span class="px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded text-sm">MongoDB</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 flex items-center">
+                                <i class="fab fa-github mr-2"></i> Code
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1" alt="Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Social Media Dashboard</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Analytics dashboard with real-time data visualization</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-sm">Vue.js</span>
+                            <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded text-sm">Firebase</span>
+                            <span class="px-2 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded text-sm">D3.js</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 flex items-center">
+                                <i class="fab fa-github mr-2"></i> Code
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1" alt="Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">AI Task Manager</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Smart task management with AI recommendations</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-sm">Next.js</span>
+                            <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded text-sm">Python</span>
+                            <span class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded text-sm">TensorFlow</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 flex items-center">
+                                <i class="fab fa-github mr-2"></i> Code
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-16">Let's Connect</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
+                                <i class="fas fa-envelope text-blue-600 dark:text-blue-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300">Email</p>
+                                <p class="text-gray-800 dark:text-white font-medium">john@example.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
+                                <i class="fas fa-phone text-blue-600 dark:text-blue-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300">Phone</p>
+                                <p class="text-gray-800 dark:text-white font-medium">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-blue-600 dark:text-blue-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600 dark:text-gray-300">Location</p>
+                                <p class="text-gray-800 dark:text-white font-medium">San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 dark:text-gray-300 mb-2" for="name">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 focus:outline-none focus:border-blue-500 transition duration-300">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 dark:text-gray-300 mb-2" for="email">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 focus:outline-none focus:border-blue-500 transition duration-300">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 dark:text-gray-300 mb-2" for="message">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 focus:outline-none focus:border-blue-500 transition duration-300"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-600 hover:text-blue-500 dark:text-gray-400"><i class="fab fa-linkedin text-2xl"></i></a>
+                <a href="#" class="text-gray-600 hover:text-blue-500 dark:text-gray-400"><i class="fab fa-github text-2xl"></i></a>
+                <a href="#" class="text-gray-600 hover:text-blue-500 dark:text-gray-400"><i class="fab fa-twitter text-2xl"></i></a>
+                <a href="#" class="text-gray-600 hover:text-blue-500 dark:text-gray-400"><i class="fas fa-envelope text-2xl"></i></a>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400">&copy; 2024 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translatey(0px); }
+            50% { transform: translatey(-20px); }
+            100% { transform: translatey(0px); }
+        }
+        .bg-grid-pattern {
+            background-image: linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
+                            linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</body>
+</html>
