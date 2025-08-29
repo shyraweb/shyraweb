@@ -7,8 +7,9 @@ export default function HeaderSection() {
   const toggleMobileMenu = (): void => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
   return (
-    <nav className="bg-white p-4 md:p-6 shadow-sm rounded-lg mx-auto max-w-7xl mt-4">
+    <nav className="bg-white px-4 md:px-6 shadow-sm rounded-lg mx-auto max-w-7xl mt-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
@@ -16,7 +17,7 @@ export default function HeaderSection() {
             href="#"
             className="text-purple-700 text-2xl font-bold flex items-center"
           >
-            <svg
+            {/* <svg
               className="w-6 h-6 mr-2"
               fill="none"
               stroke="currentColor"
@@ -29,8 +30,10 @@ export default function HeaderSection() {
                 strokeWidth="2"
                 d="M13 10V3L4 14h7v7l9-11h-7z"
               ></path>
-            </svg>
-            Flow
+            </svg> */}
+
+            <img src="/file (1).svg" alt="Logo" width={150} height={100} />
+            {/* SiRa AI */}
           </a>
         </div>
 
