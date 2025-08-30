@@ -80,7 +80,7 @@ export function AddComponent() {
   };
 
   return (
-    <div className="flex items-center justify-center w-full h-screen">
+    <div className="flex items-center justify-center w-full h-screen mt-10">
       <div className="bg-slate-400 p-3 backdrop-blur-sm shadow-lg border-none">
         <div className="p-4 flex flex-col gap-4">
           <div className="text-4xl font-bold m-auto">Add Component</div>

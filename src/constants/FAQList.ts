@@ -1,22 +1,22 @@
 export const FAQ_LIST = [
   {
-    question: "Do I need any coding skills to use Flow?",
+    question: "Do I need coding experience to use SiRa AI?",
     answer:
-      "No, you don't need any coding skills to use Flow. Our platform is designed for users of all skill levels. The drag-and-drop builder, pre-designed templates, and user-friendly interface make it accessible to everyone.",
+      "No. SiRa AI is designed for everyone — beginners and developers alike. You can visually design with our editor, rely on AI assistance, or dive into the code editor to make custom changes.",
   },
   {
-    question: "Can I use my own domain with Flow?",
+    question: "Can I export the website code I create?",
     answer:
-      "Yes, Flow allows you to connect your custom domain name easily. We provide clear instructions and support to help you set it up seamlessly.",
+      "Yes. SiRa AI lets you download clean, production-ready code in multiple formats including HTML + TailwindCSS, React.js, and Next.js, giving you full flexibility to continue development in your preferred framework.",
   },
   {
-    question: "What type of support is available for Flow users?",
+    question: "What features help me customize my site?",
     answer:
-      "We offer comprehensive support including a detailed knowledge base, video tutorials, and a dedicated support team available via chat and email to assist you with any questions or issues.",
+      "Our AI Assistant can rewrite text, restyle elements, and even redesign sections instantly. You can also delete or restore elements anytime, experiment freely, and edit layouts with full TailwindCSS support.",
   },
   {
-    question: "Is my data secure with Flow?",
+    question: "Is my data safe and what support is available?",
     answer:
-      "Absolutely. Flow prioritizes your data security with advanced encryption, regular backups, and adherence to industry best practices to ensure your information is always safe and protected.",
+      "Absolutely. SiRa AI ensures your data is secure with advanced encryption, regular backups, and best-in-class practices. Plus, you’ll have access to a detailed help center, video tutorials, and dedicated support via chat and email.",
   },
 ];

@@ -1,12 +1,12 @@
 "use client";
-
 import React, { useState, useEffect, useId } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
+import { WEBSITE_FEATURES } from "@/constants/Herosection";
 
 export interface ContainerTextFlipProps {
   /** Array of words to cycle through in the animation */
-  words?: {word: string, color: string}[];
+  words?: { word: string; color: string }[];
   /** Time in milliseconds between word transitions */
   interval?: number;
   /** Additional CSS classes to apply to the container */
@@ -17,8 +17,8 @@ export interface ContainerTextFlipProps {
   animationDuration?: number;
 }
 
-export function ContainerTextFlip({
-  words = [],
+export default function ContainerTextFlip({
+  words = WEBSITE_FEATURES,
   interval = 3000,
   className,
   textClassName,
@@ -59,14 +59,14 @@ export function ContainerTextFlip({
       animate={{ width }}
       transition={{ duration: animationDuration / 2000 }}
       className={cn(
-        "relative inline-block rounded-lg pt-2 pb-3 text-center text-4xl md:text-5xl lg:text-6xl font-bold text-white dark:text-white",
+        "relative inline-block rounded-lg pt-2 pb-3 text-center text-3xl md:text-5xl font-bold text-white dark:text-white",
         // "[background:linear-gradient(to_bottom,#f3f4f6,#e5e7eb)]",
         "shadow-[inset_0_-1px_#d1d5db,inset_0_0_0_1px_#d1d5db,_0_4px_8px_#d1d5db]",
         "dark:[background:linear-gradient(to_bottom,#374151,#1f2937)]",
         "dark:shadow-[inset_0_-1px_#10171e,inset_0_0_0_1px_hsla(205,89%,46%,.24),_0_4px_8px_#00000052] ",
-        className,
+        className
       )}
-      style={{background: words[currentWordIndex].color}}
+      style={{ background: words[currentWordIndex].color }}
       key={words[currentWordIndex].word}
     >
       <motion.div

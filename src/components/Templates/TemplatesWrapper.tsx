@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import { COMPONENTS_LIST_WITH_CATEGORY } from "@/constants/ComponentsCategory";
 import { AvailableComponent } from "@/types/editor";
 
-export function InfiniteMovingCardsDemo() {
+export default function InfiniteMovingCardsDemo() {
   const [sidebarComponentsList, setSidebarComponentsList] = useState<
     AvailableComponent[]
   >(COMPONENTS_LIST_WITH_CATEGORY);
