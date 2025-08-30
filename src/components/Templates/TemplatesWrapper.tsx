@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import { COMPONENTS_LIST_WITH_CATEGORY } from "@/constants/ComponentsCategory";
 import { AvailableComponent } from "@/types/editor";
 
-export function InfiniteMovingCardsDemo() {
+export default function InfiniteMovingCardsDemo() {
   const [sidebarComponentsList, setSidebarComponentsList] = useState<
     AvailableComponent[]
   >(COMPONENTS_LIST_WITH_CATEGORY);
@@ -31,7 +31,7 @@ export function InfiniteMovingCardsDemo() {
 
   return (
     <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards
+      {/* <InfiniteMovingCards
         items={sidebarComponentsList[0]?.samples ?? []}
         direction="right"
         speed="slow"
@@ -40,7 +40,7 @@ export function InfiniteMovingCardsDemo() {
         items={sidebarComponentsList[1]?.samples ?? []}
         direction="left"
         speed="slow"
-      />
+      /> */}
     </div>
   );
 }

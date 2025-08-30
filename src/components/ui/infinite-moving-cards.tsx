@@ -91,13 +91,13 @@ export const InfiniteMovingCards = ({
             key={item.name}
             className="w-[400px] h-[400px] flex items-center justify-center overflow-hidden border border-gray-200 dark:border-zinc-700 rounded-xl"
           >
-            <Image
+            {/* <Image
               src={item.thumbnail}
               alt="thumbnail"
               width={400}
               height={400}
               className="object-contain w-full h-full"
-            />
+            /> */}
           </li>
         ))}
       </ul>

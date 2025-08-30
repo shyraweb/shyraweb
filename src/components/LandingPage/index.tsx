@@ -1,35 +1,20 @@
-"use client";
-import React from "react";
 import dynamic from "next/dynamic";
 
 const HeaderSection = dynamic(
-  () => import("@/components/LandingPage/HeaderSection"),
-  {
-    ssr: false,
-  }
+  () => import("@/components/Navigation/HeaderSection")
 );
-
 const HeroSection = dynamic(
-  () => import("@/components/LandingPage/HeroSection"),
-  {
-    ssr: false,
-  }
+  () => import("@/components/HeroSection/HeroSection")
 );
-
-const FeaturesSection = dynamic(
-  () => import("@/components/LandingPage/FeaturesSection"),
-  {
-    ssr: false,
-  }
+const WebsiteFlow = dynamic(
+  () => import("@/components/LandingPage/WebsiteFlow")
 );
-
-import Footer from "./Footer";
-import FAQ from "./FAQ";
-import Templates from "./Templates";
-import CallToAction from "./CallToAction";
-import WebsiteFlow from "./WebsiteFlow";
-import Streamline from "./Streamline";
-import { InfiniteMovingCardsDemo } from "./TemplatesWrapper";
+// const Templates = dynamic(() => import("@/components/Templates/Templates"));
+const FAQWrapper = dynamic(() => import("@/components/FAQ/FAQWrapper"));
+const CallToAction = dynamic(
+  () => import("@/components/LandingPage/CallToAction")
+);
+const Footer = dynamic(() => import("@/components/Navigation/Footer"));
 
 const LandingPage: React.FC = () => {
   return (
@@ -37,12 +22,9 @@ const LandingPage: React.FC = () => {
       <HeaderSection />
       <HeroSection />
       <WebsiteFlow />
-      <InfiniteMovingCardsDemo />
-      <Streamline />
-      <FeaturesSection />
-      <Templates />
+      {/* <Templates /> */}
+      <FAQWrapper />
       <CallToAction />
-      <FAQ />
       <Footer />
     </div>
   );

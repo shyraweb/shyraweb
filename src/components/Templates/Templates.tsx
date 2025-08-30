@@ -30,7 +30,7 @@ export default function Templates() {
               <div className="flex overflow-x-auto gap-8 pb-4 no-scrollbar">
                 {/* Product Card 1: KLOUD-SaaS Website Homepage */}
                 <div className="flex-none w-80 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                  <img
+                  {/* <img
                     src="https://placehold.co/600x350/E0E7FF/6B46C1?text=KLOUD-SaaS"
                     alt="KLOUD-SaaS Website Homepage"
                     className="w-full h-48 object-cover"
@@ -39,7 +39,7 @@ export default function Templates() {
                       e.currentTarget.src =
                         "https://placehold.co/600x350/E0E7FF/6B46C1?text=Image+Error";
                     }}
-                  />
+                  /> */}
                   <div className="p-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-1">
                       KLOUD-SaaS Website <br /> Homepage
@@ -106,7 +106,7 @@ export default function Templates() {
     
                 {/* Product Card 2: E-Commerce Website Homepage */}
                 <div className="flex-none w-80 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                  <img
+                  {/* <img
                     src="https://placehold.co/600x350/F0F4F8/6B46C1?text=E-Commerce"
                     alt="E-Commerce Website Homepage"
                     className="w-full h-48 object-cover"
@@ -115,7 +115,7 @@ export default function Templates() {
                       e.currentTarget.src =
                         "https://placehold.co/600x350/F0F4F8/6B46C1?text=Image+Error";
                     }}
-                  />
+                  /> */}
                   <div className="p-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-1">
                       E-Commerce Website <br /> Homepage
@@ -165,7 +165,7 @@ export default function Templates() {
     
                 {/* Product Card 3: AI Website Responsive Landing Page */}
                 <div className="flex-none w-80 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                  <img
+                  {/* <img
                     src="https://placehold.co/600x350/E0E7FF/6B46C1?text=AI+Website"
                     alt="AI Website Responsive Landing Page"
                     className="w-full h-48 object-cover"
@@ -174,7 +174,7 @@ export default function Templates() {
                       e.currentTarget.src =
                         "https://placehold.co/600x350/E0E7FF/6B46C1?text=Image+Error";
                     }}
-                  />
+                  /> */}
                   <div className="p-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-1">
                       AI Website Responsive <br /> Landing Page
@@ -207,7 +207,7 @@ export default function Templates() {
     
                 {/* Product Card 4: Another example card (as seen partially in the image) */}
                 <div className="flex-none w-80 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                  <img
+                  {/* <img
                     src="https://placehold.co/600x350/F0F4F8/6B46C1?text=AUT+AWE"
                     alt="Another Website Template"
                     className="w-full h-48 object-cover"
@@ -216,7 +216,7 @@ export default function Templates() {
                       e.currentTarget.src =
                         "https://placehold.co/600x350/F0F4F8/6B46C1?text=Image+Error";
                     }}
-                  />
+                  /> */}
                   <div className="p-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-1">
                       AUT AWE <br /> TEST
