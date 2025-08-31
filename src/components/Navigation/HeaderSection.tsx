@@ -16,7 +16,7 @@ export default function Header() {
       style={{ backdropFilter: "blur(5px)" }}
     >
       <div className="flex justify-between w-full">
-        <LogoWrapper />
+        <LogoWrapper fontSizeClass="text-[28px]" />
         {/* <Link
           href={ROUTES.default}
           target="_blank"
