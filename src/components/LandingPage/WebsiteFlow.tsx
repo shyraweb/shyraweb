@@ -1,6 +1,7 @@
 import { WEBSITE_CREATION_STEPS } from "@/constants/WebsiteCreationSteps";
 import dynamic from "next/dynamic";
 import { CircleCheck } from "lucide-react";
+import Image from "next/image";
 
 const StartButton = dynamic(
   () => import("@/components/SharedComponents/StartButton")
@@ -19,12 +20,12 @@ export default function WebsiteFlow() {
         <span className="text-sm md:text-lg text-gray-600 mb-16 flex justify-center">
           Get from idea to final layout in just a few steps.
         </span>
-        <div className="w-full py-4">
+        <div className="w-full py-4 gap-52">
           {WEBSITE_CREATION_STEPS.map((step, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center justify-between gap-12 mb-24 ${
-                index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"
+              className={`flex flex-col items-center justify-between gap-12 mb-36 ${
+                index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
               }`}
             >
               <div className="md:w-1/2 text-left">
@@ -47,6 +48,15 @@ export default function WebsiteFlow() {
                 <StartButton title="Try now" />
               </div>
               <div className="md:w-1/2 flex justify-center">
+                <Image
+                  src={step.img}
+                  alt={step.title}
+                  width={336}
+                  height={350}
+                  sizes="(max-width: 768px) 100vw, 336px"
+                  className="object-cover object-center rounded-[14px] shadow-md w-full"
+                  priority={true}
+                />
                 {/* <img
                 src="https://placehold.co/600x400/F0F4F8/6B46C1?text=Teamwork+Dashboard"
                 alt="Teamwork Dashboard Mockup"

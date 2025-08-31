@@ -10,7 +10,7 @@ const ContainerTextFlip = dynamic(
 export default function MainHeading() {
   return (
     <h1 className="text-3xl md:text-5xl text-gray-900 leading-normal font-semibold tracking-tight">
-      <motion.h1
+      <motion.div
         initial={{
           opacity: 0,
         }}
@@ -22,7 +22,7 @@ export default function MainHeading() {
       >
         Create a <ContainerTextFlip />
         <br className="hidden md:inline" />
-      </motion.h1>
+      </motion.div>
       <span className="mt-1">website without limits</span>
     </h1>
   );

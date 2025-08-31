@@ -1,3 +1,4 @@
+import { LastDeletedElementInfo } from "@/types/editor";
 import {create} from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 
@@ -6,34 +7,37 @@ const name = "editorStore";
 type commonVoid<T> = (arg: T) => void;
 
 type StoreType = {
-  publishedURL: string;
-  publishedTitle: string;
-
+  publishedURL: string[];
   setPublishedURL: commonVoid<string>;
-  setPublishedTitle: commonVoid<string>;
 
   isRehydrated: boolean;
   setIsRehydrated: commonVoid<boolean>;
+
+  // state to track the last deleted element for restoration
+  lastDeletedElementInfo: LastDeletedElementInfo | null;
+  setLastDeletedElementInfo: commonVoid<LastDeletedElementInfo | null>;
 };
 
 export const useEditorStore = create<StoreType>()(
   persist(
     (set) => ({
-      publishedURL: "",
-      publishedTitle: "Home",
-
-      setPublishedURL: (key) => set({ publishedURL: key }),
-      setPublishedTitle: (key) => set({ publishedTitle: key }),
+      publishedURL: [],
+      setPublishedURL: (key) =>
+        set((state) => ({
+          publishedURL: [key, ...state.publishedURL],
+        })),
 
       isRehydrated: false,
       setIsRehydrated: (value) => set({ isRehydrated: value }),
+
+      lastDeletedElementInfo: null,
+      setLastDeletedElementInfo: (value) => set({ lastDeletedElementInfo: value }),
     }),
 
     {
       name,
       partialize: (state) => ({
         publishedURL: state.publishedURL,
-        publishedTitle: state.publishedTitle,
       }),
       onRehydrateStorage: () => {
         return (state) => {

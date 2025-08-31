@@ -15,10 +15,10 @@ export default function HeroSection() {
         <div className="flex w-full flex-row justify-center gap-20 max-w-7xl mb-16">
           <div className="flex flex-col gap-4">
             <MainHeading />
-            <p className="text-sm md:text-lg text-gray-600 mb-6 max-w-2xl">
+            <span className="text-sm md:text-lg text-gray-600 mb-6 max-w-2xl">
               Build your dream website, no coding needed. Simply choose a
               template and make it your own.
-            </p>
+            </span>
             <StartButton />
           </div>
           <div className="hidden lg:block">

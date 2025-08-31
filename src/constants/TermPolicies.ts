@@ -9,7 +9,7 @@ export const sections: Section[] = [
   {
     title: "Platform Usage & Access",
     introduction:
-      "SiRa AI is a website builder platform that enables users to design, customize, and export websites using templates, AI assistance, and code generation. By accessing and using SiRa AI, you agree to:",
+      "ShyRa Web is a website builder platform that enables users to design, customize, and export websites using templates, AI assistance, and code generation. By accessing and using ShyRa Web, you agree to:",
     points: [
       "Use the platform for lawful purposes only",
       "Not attempt to reverse engineer, resell, or exploit the platform",
@@ -20,7 +20,7 @@ export const sections: Section[] = [
   {
     title: "Intellectual Property & Generated Code",
     introduction:
-      "All templates, design assets, and platform features within SiRa AI are protected by intellectual property laws. This includes:",
+      "All templates, design assets, and platform features within ShyRa Web are protected by intellectual property laws. This includes:",
     points: [
       "Pre-designed templates and UI components",
       "Platform features such as the editor and AI assistant",
@@ -28,12 +28,12 @@ export const sections: Section[] = [
       "Training data, algorithms, and unique design outputs",
     ],
     conclusion:
-      "Users may export and use generated website code (HTML, TailwindCSS, React.js, Next.js) for personal or commercial projects. However, resale or redistribution of SiRa AI templates and platform features is prohibited.",
+      "Users may export and use generated website code (HTML, TailwindCSS, React.js, Next.js) for personal or commercial projects. However, resale or redistribution of ShyRa Web templates and platform features is prohibited.",
   },
   {
     title: "Customization, AI Assistance & Limitations",
     introduction:
-      "SiRa AI offers tools like drag-and-drop editing, TailwindCSS customization, and AI-powered content or design suggestions. Please note:",
+      "ShyRa Web offers tools like drag-and-drop editing, TailwindCSS customization, and AI-powered content or design suggestions. Please note:",
     points: [
       "AI-generated content and designs are suggestions and may require review",
       "Users are responsible for verifying and modifying exported code before production use",
@@ -41,12 +41,12 @@ export const sections: Section[] = [
       "Integration with external tools or services may be subject to their own terms",
     ],
     conclusion:
-      "While SiRa AI makes website building easier, users must ensure final output aligns with their intended use case.",
+      "While ShyRa Web makes website building easier, users must ensure final output aligns with their intended use case.",
   },
   {
     title: "Data Privacy & Security",
     introduction:
-      "We take your privacy seriously and ensure secure handling of user data. While using SiRa AI:",
+      "We take your privacy seriously and ensure secure handling of user data. While using ShyRa Web:",
     points: [
       "Only essential technical and analytics data may be collected to improve user experience",
       "Personal information is stored only with explicit user consent",
@@ -72,7 +72,7 @@ export const sections: Section[] = [
   {
     title: "Updates, Modifications & Availability",
     introduction:
-      "SiRa AI is continuously evolving to improve user experience. We reserve the right to:",
+      "ShyRa Web is continuously evolving to improve user experience. We reserve the right to:",
     points: [
       "Update or modify templates, features, and platform tools",
       "Introduce new functionalities or remove outdated ones",
@@ -88,7 +88,7 @@ export const sections: Section[] = [
     introduction:
       "While we strive to deliver the best experience, please note:",
     points: [
-      "SiRa AI is provided 'as is' without warranties of any kind",
+      "ShyRa Web is provided 'as is' without warranties of any kind",
       "Generated websites may require adjustments for production environments",
       "Performance may vary depending on hosting provider, device, or browser",
       "We do not guarantee success or results from using AI-generated content",

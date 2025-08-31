@@ -1,12 +1,13 @@
 import { SelectedComponent } from "@/types/editor";
 
 export const generateFullHtml = (
-  selectedComponents: SelectedComponent[]
+  selectedComponents: SelectedComponent[],
+  title?: string
 ): string => {
   const headContent = `
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Website Preview</title>
+      <title>${title ?? "Website Preview"}</title>
       <script src="https://cdn.tailwindcss.com"></script>
       <style>
         body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; }

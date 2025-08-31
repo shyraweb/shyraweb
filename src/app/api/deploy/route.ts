@@ -1,15 +1,20 @@
-// app/api/github-deploy/route.ts
 import { NextRequest, NextResponse } from "next/server";
-
-const GITHUB_API = "https://api.github.com";
 
 export async function POST(req: NextRequest) {
   const { repoName, htmlContent } = await req.json();
 
-  const username = "khushbu-asati";
-  const token = "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";
-  const branch = "main";
+  const GITHUB_API =
+    process.env.GITHUB_API_BASE_URL || "https://api.github.com";
+  const username = process.env.GITHUB_USERNAME || "shyraweb";
+  const token =
+    process.env.GITHUB_DEPLOYMENT_TOKEN ||
+    "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";
+  
+  // const token = "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";
+  const branch = process.env.GITHUB_BRANCH || "main";
   const encodedContent = Buffer.from(htmlContent).toString("base64");
+  const DEPLOYED_WEBSITE_BASE_URL =
+    process.env.DEPLOYED_WEBSITE_BASE_URL || "https://shyraweb.github.io/";
 
   try {
     // Step 1: Create GitHub Repository
@@ -30,7 +35,10 @@ export async function POST(req: NextRequest) {
 
     if (!createRepoRes.ok) {
       const error = await createRepoRes.json();
-      return NextResponse.json({ error, step: "repo-creation" }, { status: createRepoRes.status });
+      return NextResponse.json(
+        { error, step: "repo-creation" },
+        { status: createRepoRes.status }
+      );
     }
 
     // Step 2: Upload index.html
@@ -52,7 +60,10 @@ export async function POST(req: NextRequest) {
 
     if (!uploadFileRes.ok) {
       const error = await uploadFileRes.json();
-      return NextResponse.json({ error, step: "file-upload" }, { status: uploadFileRes.status });
+      return NextResponse.json(
+        { error, step: "file-upload" },
+        { status: uploadFileRes.status }
+      );
     }
 
     // Step 3: Enable GitHub Pages
@@ -75,14 +86,16 @@ export async function POST(req: NextRequest) {
 
     if (!enablePagesRes.ok && enablePagesRes.status !== 409) {
       const error = await enablePagesRes.json();
-      return NextResponse.json({ error, step: "enable-pages" }, { status: enablePagesRes.status });
+      return NextResponse.json(
+        { error, step: "enable-pages" },
+        { status: enablePagesRes.status }
+      );
     }
-
-    const siteUrl = `https://${username}.github.io/${repoName}/`;
 
     return NextResponse.json({
       message: "Deployed successfully!",
-      url: siteUrl,
+      url: `${DEPLOYED_WEBSITE_BASE_URL}${repoName}`,
+      status: 200,
     });
   } catch (err: any) {
     return NextResponse.json(

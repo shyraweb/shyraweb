@@ -84,9 +84,6 @@ export interface InnerElementPropertiesProps {
   setSelectedComponents: React.Dispatch<
     React.SetStateAction<SelectedComponent[]>
   >;
-  setLastDeletedElementInfo: React.Dispatch<
-    React.SetStateAction<LastDeletedElementInfo | null>
-  >;
 }
 
 export interface EditorComponentWrapperProps {
@@ -111,16 +108,12 @@ export interface EditorComponentWrapperProps {
 
 export interface PropertyWrapperProps {
   // Element restoration props
-  lastDeletedElementInfo: LastDeletedElementInfo | null;
   handleInnerElementRestore: () => void;
 
   // Inner Element properties props
   selectedInnerElement: SelectedInnerElement | null;
   setSelectedInnerElement: React.Dispatch<
     React.SetStateAction<SelectedInnerElement | null>
-  >;
-  setLastDeletedElementInfo: React.Dispatch<
-    React.SetStateAction<LastDeletedElementInfo | null>
   >;
 
   // AI Assistant Props
@@ -137,9 +130,6 @@ export interface DeleteElementProps {
   selectedComponents: SelectedComponent[];
   setSelectedComponents: React.Dispatch<
     React.SetStateAction<SelectedComponent[]>
-  >;
-  setLastDeletedElementInfo: React.Dispatch<
-    React.SetStateAction<LastDeletedElementInfo | null>
   >;
   setSelectedInnerElement: React.Dispatch<
     React.SetStateAction<SelectedInnerElement | null>
