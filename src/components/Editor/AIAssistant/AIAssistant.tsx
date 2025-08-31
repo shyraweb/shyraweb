@@ -178,7 +178,7 @@ ${currentHtmlToModify}`;
     <div className="mt-6 p-4 bg-white/10 flex flex-col gap-2 backdrop-blur-sm border border-indigo-500/20 rounded-2xl overflow-hidden">
       <h2 className="text-lg font-bold text-violet-700">AI Assistant</h2>
       <p className="text-neutral-600 text-[12px] mb-2">
-        Describe how you want to modify the selected element/component's UI:
+        Describe how you want to modify the selected element/component&apos;s UI:
       </p>
       <textarea
         className="w-full p-2 text-[13px] border border-blue-300 rounded-md shadow-sm text-gray-800 resize-y min-h-32 max-h-56 focus:ring-blue-500 focus:border-blue-500"

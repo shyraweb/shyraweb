@@ -25,7 +25,7 @@ export default function CodeEditConfirmModal({
       >
         <h3 className="text-2xl font-bold text-black">Discard Changes</h3>
         <p className="text-gray-600">
-          You have made changes that haven't been saved yet. Are you sure to
+          You have made changes that haven&apos;t been saved yet. Are you sure to
           discard changes ?
         </p>
         <div className="flex items-center justify-between gap-4">

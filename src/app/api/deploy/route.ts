@@ -91,10 +91,15 @@ export async function POST(req: NextRequest) {
       url: `${DEPLOYED_WEBSITE_BASE_URL}${repoName}`,
       status: 200,
     });
-  } catch (err: any) {
-    return NextResponse.json(
-      { error: "Internal Server Error", details: err.message },
-      { status: 500 }
-    );
-  }
+  } catch (error: unknown) {
+      console.error("Internal Server Error", error);
+  
+      let message = "Internal Server Error";
+  
+      if (error instanceof Error) {
+        message = error.message;
+      }
+  
+      return NextResponse.json({ success: false, message }, { status: 500 });
+    }
 }

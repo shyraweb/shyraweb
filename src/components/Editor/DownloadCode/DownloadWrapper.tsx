@@ -92,10 +92,14 @@ export default function DownloadWrapper({
 
   return (
     <Select onValueChange={handleDownloadSelection}>
-      <SelectTrigger className="w-fit lg:w-[180px] border-2 border-white bg-blue-500 text-white font-semibold transition-colors duration-200 shadow-sm">
+      <SelectTrigger
+        aria-label="Download"
+        title="Download code"
+        className="w-fit border-2 border-white bg-blue-500 text-white font-semibold transition-colors duration-200 shadow-sm"
+      >
         <Download className="w-5 h-5 animate-bounce text-white" />{" "}
         <span className="hidden lg:block text-[12px]">
-          {downloading ? "Downloading..." : "Download Code"}
+          {downloading ? "Downloading..." : "Code"}
         </span>
       </SelectTrigger>
       <SelectContent className="p-2">
@@ -106,7 +110,7 @@ export default function DownloadWrapper({
             key={item.value}
           >
             <div className="flex flex-col">
-              <h1 className="font-semibold w-full text-[13px]">{item.title}</h1>
+              <span className="font-semibold w-full text-[13px]">{item.title}</span>
               <span className="text-muted-foreground w-full text-[13px]">
                 {item.content}
               </span>

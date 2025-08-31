@@ -12,10 +12,10 @@ export default function WebsiteFlow() {
     <section className="py-28 md:py-28 flex flex-col items-center bg-white rounded-3xl">
       <div className="container mx-auto px-4 max-w-7xl">
         <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6 text-center">
-          Bring your{" "}
-          <span className="bg-clip-text text-transparent gradientBg">
+          Bring your vision to life
+          {/* <span className="bg-clip-text text-transparent gradientBg">
             vision to life
-          </span>
+          </span> */}
         </h2>
         <span className="text-sm md:text-lg text-gray-600 mb-16 flex justify-center">
           Get from idea to final layout in just a few steps.

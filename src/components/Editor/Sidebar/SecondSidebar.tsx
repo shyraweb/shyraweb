@@ -1,3 +1,4 @@
+import { Sample } from "@/types/editor";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -9,7 +10,7 @@ export default function SecondSidebar({
 }: {
   id: string;
   title: string;
-  list: any[];
+  list: Sample[];
   addComponent: (id: string, itemId: string) => void;
 }) {
   return (
@@ -29,7 +30,7 @@ export default function SecondSidebar({
               onClick={() => addComponent(id, item._id)}
               className="w-full text-left p-1 hover:bg-purple-600 rounded-md"
             >
-              <Image src={item.thumbnail} alt="" width={288} height={100} />
+              <Image src={item.thumbnail ?? ""} alt="" width={288} height={100} />
             </button>
           ))}
         </div>

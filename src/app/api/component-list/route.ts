@@ -31,11 +31,15 @@ export async function GET() {
       { result: categorizedData, success: true },
       { status: 200 }
     );
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Error in GET /components:", error);
-    return NextResponse.json(
-      { success: false, message: "Failed to fetch components", error: error.message },
-      { status: 500 }
-    );
+
+    let message = "Failed to fetch components";
+
+    if (error instanceof Error) {
+      message = error.message;
+    }
+
+    return NextResponse.json({ success: false, message }, { status: 500 });
   }
 }

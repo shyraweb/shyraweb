@@ -14,13 +14,6 @@ export async function POST(req: NextRequest) {
       apiKey: groqApiKey || process.env.GROQ_API_KEY,
     });
 
-    const newConversation = [
-      {
-        role: USER_ROLE,
-        content: projectDescription,
-      },
-    ];
-
     const response = await groqInstance.chat.completions.create({
       messages: [{ role: ASSISTANT_ROLE, content: "" }, {
         role: USER_ROLE,

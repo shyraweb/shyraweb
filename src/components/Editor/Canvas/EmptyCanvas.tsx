@@ -9,10 +9,10 @@ export default function EmptyCanvas() {
       <div className="text-violet-700">
         <AILoader canvasView={true} />
       </div>
-      <div className="text-center text-gray-500 text-lg mt-20">
+      <h1 className="text-center text-gray-500 text-lg mt-20">
         Hover over a component type on the left to see UIs, then click on any UI
         to add it here.
-      </div>
+      </h1>
     </div>
   );
 }
