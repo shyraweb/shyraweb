@@ -1,6 +1,6 @@
 "use client";
 import { useEditorStore } from "@/store/editorStore";
-import { AvailableComponent, SelectedComponent } from "@/types/editor";
+import { AvailableComponent, SelectedComponent, SelectedInnerElement } from "@/types/editor";
 import { AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
 import { useState } from "react";
@@ -22,7 +22,7 @@ export default function SidebarWrapper({
   selectedComponents: SelectedComponent[];
   setSelectedComponents: (components: SelectedComponent[]) => void;
   setActiveComponent: (component: SelectedComponent | null) => void;
-  setSelectedInnerElement: (element: any) => void;
+  setSelectedInnerElement: (element: SelectedInnerElement | null) => void;
 }) {
   const [hoveredComponent, setHoveredComponent] =
     useState<AvailableComponent | null>(null);
@@ -47,7 +47,6 @@ export default function SidebarWrapper({
         type: componentType,
         name: componentDefinition.name,
         _id: sampleId,
-        props: {},
         htmlContent: assignUniqueIdsToHtml(sampleDefinition.html || ""),
       };
 

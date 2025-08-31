@@ -107,14 +107,18 @@ export default function CanvasWrapper({
         tagName,
       });
     },
-    [selectedComponents]
+    [
+      selectedComponents,
+      setActiveComponent,
+      setLastDeletedElementInfo,
+      setSelectedInnerElement,
+    ]
   );
 
   const renderComponent = (component: SelectedComponent, index: number) => {
     const commonProps = {
       id: component.id,
       name: component.name,
-      props: component.props,
       onRemove: removeComponent,
       onSelect: setActiveComponent,
       isActive: activeComponent?.id === component.id,

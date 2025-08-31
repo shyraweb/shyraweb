@@ -89,10 +89,12 @@ export default function PublishWebsite({
       <button
         onClick={publishWebsite}
         disabled={loading}
-        className="btnBg px-5 flex gap-2 items-center py-2 rounded-md font-semibold transition-colors duration-200 shadow-sm focus:outline-none focus:ring-2"
+        className="btnBg max-h-9 w-max px-5 flex gap-2 items-center py-2 rounded-md font-semibold transition-colors duration-200 shadow-sm focus:outline-none focus:ring-2"
+        aria-label="Publish"
+        title="Publish Website"
       >
         <Rocket className="size-4" />
-        {loading ? "Publishing..." : "Publish Website"}
+        <span className="hidden lg:block">Publish Website</span>
       </button>
       {publishedURL.length ? <PublishedURLs /> : null}
       <AnimatePresence>

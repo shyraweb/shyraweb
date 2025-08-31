@@ -49,7 +49,7 @@ const InnerElementProperties: FC<InnerElementPropertiesProps> = ({
 
       if (elementToModify) {
         elementToModify.className = newClasses;
-        let nodesToRemove: ChildNode[] = [];
+        const nodesToRemove: ChildNode[] = [];
         Array.from(elementToModify.childNodes).forEach((node) => {
           if (node.nodeType === Node.TEXT_NODE) {
             nodesToRemove.push(node);
@@ -118,7 +118,7 @@ const InnerElementProperties: FC<InnerElementPropertiesProps> = ({
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3" className="bg-white p-2 shadow-sm rounded-md mb-4">
-          <AccordionTrigger>Element's Content:</AccordionTrigger>
+          <AccordionTrigger>Element&apos;s Content:</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
             <EditorElementContent
               elementText={innerText || ""}

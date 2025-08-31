@@ -6,9 +6,6 @@ import {
   SelectedInnerElement,
 } from "@/types/editor";
 import { COMPONENTS_LIST_WITH_CATEGORY } from "@/constants/ComponentsCategory";
-// import Logo from "@/icons/Logo";
-import Link from "next/link";
-import { ROUTES } from "@/constants/Routes";
 import { useEditorStore } from "@/store/editorStore";
 import dynamic from "next/dynamic";
 import LogoWrapper from "../SharedComponents/LogoWrapper";
@@ -134,10 +131,10 @@ const EditorPage: FC = () => {
         console.error("Target parent not found for restoration.");
       }
     }
-  }, [lastDeletedElementInfo, selectedComponents]);
+  }, [lastDeletedElementInfo, selectedComponents, setLastDeletedElementInfo]);
 
   return (
-    <div className="flex h-screen overflow-hidden bg-gray-100">
+    <div className="flex h-screen bg-gray-100 overflow-auto">
       <div>
         <div className="bg-white p-2 pl-1">
           <LogoWrapper width="70" height="49" fontSizeClass="text-[20px]" />

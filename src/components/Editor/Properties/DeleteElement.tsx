@@ -9,11 +9,10 @@ export default function DeleteElement({
   elementId,
   selectedComponents,
   setSelectedComponents,
-  setSelectedInnerElement
+  setSelectedInnerElement,
 }: DeleteElementProps) {
-
   const { setLastDeletedElementInfo } = useEditorStore();
-    
+
   const handleInnerElementDelete = useCallback(() => {
     const componentToUpdate = selectedComponents.find(
       (comp) => comp.id === componentId
@@ -57,7 +56,14 @@ export default function DeleteElement({
       );
       setSelectedInnerElement(null);
     }
-  }, [selectedComponents]);
+  }, [
+    componentId,
+    elementId,
+    selectedComponents,
+    setLastDeletedElementInfo,
+    setSelectedComponents,
+    setSelectedInnerElement,
+  ]);
 
   return (
     <Button

@@ -5,6 +5,7 @@ export interface Sample {
   sampleName: string;
   preview: string;
   html: string;
+  thumbnail?: string;
 }
 
 export interface AvailableComponent {
@@ -12,7 +13,6 @@ export interface AvailableComponent {
   name: string;
   icon: string;
   samples?: Sample[];
-  iconName?: React.ReactNode
 }
 
 export interface SelectedComponent {
@@ -20,7 +20,7 @@ export interface SelectedComponent {
   type: string;
   name: string;
   _id: string;
-  props: { [key: string]: any }; // Flexible for various component props
+  // props: { [key: string]: any }; // Flexible for various component props
   htmlContent: string;
 }
 
@@ -58,7 +58,7 @@ export interface ComponentPropertiesProps {
   component: SelectedComponent;
   onUpdateProps: (
     componentId: string,
-    newProps: { [key: string]: any }
+    // newProps: { [key: string]: any }
   ) => void;
 }
 

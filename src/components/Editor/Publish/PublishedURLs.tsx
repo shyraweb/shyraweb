@@ -20,9 +20,13 @@ export default function PublishedURLs() {
 
   return (
     <Select onValueChange={handleSelection}>
-      <SelectTrigger className="w-fit lg:w-[180px] border-2 border-[#ed4b9b] bg-white text-[#ed4b9b] font-semibold transition-colors duration-200 shadow-sm">
+      <SelectTrigger
+        aria-label="Publish"
+        title="Published URLs"
+        className="w-fit border-2 border-[#ed4b9b] bg-white text-[#ed4b9b] font-semibold transition-colors duration-200 shadow-sm"
+      >
         <Globe className="size-4 text-[#ed4b9b]" />
-        Published URLs
+        <span className="hidden xl:block">Published URLs</span>
       </SelectTrigger>
       <SelectContent className="p-2">
         {publishedURL.map((item, index) => (
@@ -32,9 +36,9 @@ export default function PublishedURLs() {
             key={item + index}
           >
             <div className="flex flex-col">
-              <h1 className="font-semibold w-full text-[13px]">
+              <span className="font-semibold w-full text-[13px]">
                 Website Link {index + 1}
-              </h1>
+              </span>
               <span className="text-muted-foreground w-full text-[13px]">
                 {item}
               </span>

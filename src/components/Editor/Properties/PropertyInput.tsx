@@ -23,8 +23,8 @@ const PropertyInput: FC<PropertyInputProps> = ({ label, name, value, onChange, t
         name={name}
         value={value}
         onChange={onChange}
-        onFocus={onFocus as any} // Cast to any because onFocus expects React.FocusEvent<HTMLInputElement>
-        onKeyDown={onKeyDown as any} // Cast to any because onKeyDown expects React.KeyboardEvent<HTMLInputElement>
+        onFocus={onFocus} // Cast to any because onFocus expects React.FocusEvent<HTMLInputElement>
+        onKeyDown={onKeyDown} // Cast to any because onKeyDown expects React.KeyboardEvent<HTMLInputElement>
         className="block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
         placeholder={placeholder}
       />

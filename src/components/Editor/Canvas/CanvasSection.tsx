@@ -25,9 +25,9 @@ export default function CanvasSection({
             />
           ))}
         </div>
-        <h1 className="bg-white ml-[-4rem] shadow-2xl h-6 px-20 pt-0.5 rounded text-center text-sm font-semibold text-gray-800">
+        <span className="bg-white ml-[-4rem] shadow-2xl h-6 px-20 pt-0.5 rounded text-center text-sm font-semibold text-gray-800">
           index.html
-        </h1>
+        </span>
         <div />
       </div>
       <div className="bg-white shadow-xl rounded-lg rounded-t-none h-[93%] overflow-hidden pt-30 overflow-y-auto custom-scrollbar p-6 flex flex-col space-y-8">

@@ -22,7 +22,7 @@ export default function PropertiesWrapper({
   const { lastDeletedElementInfo } = useEditorStore();
 
   return (
-    <aside className="w-80  px-1 py-4 min-h-screen relative overflow-hidden pt-30 shadow-lg overflow-y-auto custom-scrollbar">
+    <aside className="w-80 px-1 py-4 min-h-screen relative overflow-hidden pt-30 shadow-lg overflow-y-auto custom-scrollbar">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-indigo-500/10 to-background" />
       <div className="absolute inset-0">

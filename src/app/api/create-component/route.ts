@@ -30,11 +30,15 @@ export async function POST(request: Request) {
       { success: true, data: savedComponent },
       { status: 201 }
     );
-  } catch (error: any) {
-    console.error("Component creation error:", error);
-    return NextResponse.json(
-      { success: false, message: "Something went wrong", error: error.message },
-      { status: 500 }
-    );
+  } catch (error: unknown) {
+    console.error("Component creation error", error);
+
+    let message = "Something went wrong";
+
+    if (error instanceof Error) {
+      message = error.message;
+    }
+
+    return NextResponse.json({ success: false, message }, { status: 500 });
   }
 }

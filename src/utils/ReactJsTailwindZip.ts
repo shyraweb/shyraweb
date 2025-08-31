@@ -1,7 +1,7 @@
 import { PROJECT_NAMES } from "@/constants/ProjectNames";
 import JSZip from "jszip";
 
-export const getReactJsTailwindZip = (appHtmlContent: any) => {
+export const getReactJsTailwindZip = (appHtmlContent: string) => {
   const zip = new JSZip();
   zip.file(
     `${PROJECT_NAMES.ReactTailwindProjectName}/public/index.html`,

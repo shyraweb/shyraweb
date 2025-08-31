@@ -70,6 +70,7 @@ export const useEditorStore = create<StoreType>()(
 try {
   void useEditorStore?.persist?.getOptions().storage?.getItem(name);
 } catch (error) {
+  console.error("Failed to access storage:", error);
   useEditorStore?.setState(useEditorStore?.getInitialState());
   void useEditorStore?.persist?.rehydrate();
 }

@@ -1,5 +1,4 @@
 import { AvailableComponent } from "@/types/editor";
-import { Users } from "lucide-react";
 
 export const COMPONENTS_CATEGORY = [
   {
@@ -49,7 +48,7 @@ export const COMPONENTS_CATEGORY = [
       { id: "settings", name: "Settings", icon: "⚙️" },
       { id: "notifications", name: "Notifications", icon: "🔔" },
       { id: "checkout", name: "Checkout", icon: "🛒" },
-      { id: "teams", name: "Teams", icon: Users, iconType: true },
+      { id: "teams", name: "Teams", icon: "👥" },
     ],
   },
 ];
@@ -74,5 +73,5 @@ export const COMPONENTS_LIST_WITH_CATEGORY: AvailableComponent[] = [
   { id: "settings", name: "Settings", icon: "⚙️" },
   { id: "notifications", name: "Notifications", icon: "🔔" },
   { id: "checkout", name: "Checkout", icon: "🛒" },
-  { id: "teams", name: "Teams", iconName: Users },
+  { id: "teams", name: "Teams", icon: "👥" },
 ];

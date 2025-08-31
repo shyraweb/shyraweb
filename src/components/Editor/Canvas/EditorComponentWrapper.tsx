@@ -1,11 +1,17 @@
 import React, { useRef, useEffect, useCallback, useState } from "react";
 import { EditorComponentWrapperProps } from "@/types/editor";
-import { X, ArrowUp, ArrowDown, CodeXml, Trash } from "lucide-react";
+import { ArrowUp, ArrowDown, CodeXml, Trash } from "lucide-react";
 import dynamic from "next/dynamic";
 
 const CodeDrawer = dynamic(
   () => import("@/components/Editor/CodeEditDrawers/CodeDrawer")
 );
+
+interface TailwindWindow extends Window {
+  tailwind?: {
+    config?: unknown; // or Record<string, unknown> if it's an object
+  };
+}
 
 const EditorComponentWrapper: React.FC<EditorComponentWrapperProps> = ({
   id,
@@ -57,7 +63,7 @@ const EditorComponentWrapper: React.FC<EditorComponentWrapperProps> = ({
   }, [isActive, selectedInnerElementId, clearAllStyles]);
 
   useEffect(() => {
-    const win = window as any;
+    const win = window as TailwindWindow;
     if (win.tailwind && typeof win.tailwind.config !== "undefined") {
       win.tailwind.config = win.tailwind.config;
     }
@@ -158,7 +164,6 @@ const EditorComponentWrapper: React.FC<EditorComponentWrapperProps> = ({
             type: "",
             name: "",
             _id: "",
-            props: {},
             htmlContent: "",
           })
         }

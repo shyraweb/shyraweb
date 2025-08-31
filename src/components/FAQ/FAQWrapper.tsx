@@ -10,12 +10,12 @@ export default function FAQWrapper() {
             FAQ
           </p>
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-            Let's Answer to All <br className="hidden md:inline" /> Your
+            Let&apos;s Answer to All <br className="hidden md:inline" /> Your
             Questions
           </h2>
           <p className="text-gray-600 text-base 2xl:text-lg mb-8">
             Find in-depth answers to common questions and gain a deeper
-            understanding of our solution's features, functionality, and
+            understanding of our solution&apos;s features, functionality, and
             support.
           </p>
         </div>

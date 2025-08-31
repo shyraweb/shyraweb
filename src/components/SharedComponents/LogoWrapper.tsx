@@ -20,6 +20,9 @@ export default function LogoWrapper(props: {
       aria-label="ShyRa web"
     >
       <Logo {...props} />
+      <span className={`text-text-primary font-bold w-max ${props.fontSizeClass}`}>
+        ShyRa Web
+      </span>
     </Link>
   );
 }

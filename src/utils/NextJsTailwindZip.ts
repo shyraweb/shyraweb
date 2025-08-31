@@ -1,9 +1,8 @@
 import { PROJECT_NAMES } from "@/constants/ProjectNames";
 import JSZip from "jszip";
 
-export const getNextJsTailwindZip = (appHtmlContent: any) => {
+export const getNextJsTailwindZip = (appHtmlContent: string) => {
   const zip = new JSZip();
-  const projectName = "my-nextjs-tailwind-project";
   zip.file(
     `${PROJECT_NAMES.NextTailwindProjectName}/app/page.tsx`,
     `export default function Home() {
