@@ -7,7 +7,7 @@ export const WEBSITE_CREATION_STEPS = [
       "Mix and match template sections for a unique design.",
       "Start with sleek, modern TailwindCSS styling out of the box."
     ],
-    img: "/assets/website-creation-steps/template-selection.png",
+    img: "/assets/Step-1.webp",
   },
   {
     title: "Customize & Edit with Ease",
@@ -17,7 +17,7 @@ export const WEBSITE_CREATION_STEPS = [
       "Rearrange or remove elements effortlessly — no worries about mistakes.",
       "For developers, tweak live code in HTML, React, or Next.js directly."
     ],
-    img: "/assets/website-creation-steps/template-selection.png",
+    img: "/assets/Step-2.webp",
   },
   {
     title: "Preview & Export → Launch Website",
@@ -27,6 +27,6 @@ export const WEBSITE_CREATION_STEPS = [
       "Deploy seamlessly to Vercel, Netlify, or GitHub Pages.",
       "Follow simple deployment guides to launch your site instantly."
     ],
-    img: "/assets/website-creation-steps/template-selection.png",
+    img: "/assets/Step-3.webp",
   },
 ];

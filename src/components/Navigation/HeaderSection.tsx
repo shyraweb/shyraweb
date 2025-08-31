@@ -1,14 +1,10 @@
 "use client";
-import { Dancing_Script } from "next/font/google";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { ROUTES } from "@/constants/Routes";
-import Logo from "@/icons/Logo";
+import dynamic from "next/dynamic";
 
-const dancingScript = Dancing_Script({
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
-});
+const LogoWrapper = dynamic(
+  () => import("@/components/SharedComponents/LogoWrapper")
+);
 
 export default function Header() {
   return (
@@ -20,13 +16,7 @@ export default function Header() {
       style={{ backdropFilter: "blur(5px)" }}
     >
       <div className="flex justify-between w-full">
-        <Link
-          href={ROUTES.default}
-          className={`text-[26px] block text-text-primary w-24 h-12 font-bold cursor-pointer ${dancingScript.className}`}
-          aria-label="SiRa AI"
-        >
-          <Logo />
-        </Link>
+        <LogoWrapper />
         {/* <Link
           href={ROUTES.default}
           target="_blank"

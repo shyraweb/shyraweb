@@ -12,7 +12,7 @@ export default function StartButton({
     <Link
       href={ROUTES.editor}
       className={`btnBg w-fit rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-0.5 ${className}`}
-      aria-label="SiRa AI"
+      aria-label="ShyRa Web"
     >
       {title ?? "Get Started"}
     </Link>

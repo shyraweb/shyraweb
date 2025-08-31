@@ -9,7 +9,7 @@ export default function CallToAction() {
           Create your website today
         </h2>
         <p className="text-base text-white mb-2 max-w-3xl mx-auto">
-          Create a stunning website in minutes with SiRa AI easiest website
+          Create a stunning website in minutes with ShyRa Web easiest website
           builder.
         </p>
         <p className="text-base text-white mb-10 max-w-3xl mx-auto">
@@ -18,7 +18,7 @@ export default function CallToAction() {
         <Link
           href={ROUTES.editor}
           className={`bg-white text-black font-[500] text-base py-3 px-8 w-fit rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-0.5`}
-          aria-label="SiRa AI"
+          aria-label="ShyRa Web"
         >
           Get Started
         </Link>
