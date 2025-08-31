@@ -3,18 +3,12 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
   const { repoName, htmlContent } = await req.json();
 
-  const GITHUB_API =
-    process.env.GITHUB_API_BASE_URL || "https://api.github.com";
-  const username = process.env.GITHUB_USERNAME || "shyraweb";
-  const token =
-    process.env.GITHUB_DEPLOYMENT_TOKEN ||
-    "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";
-  
-  // const token = "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";
-  const branch = process.env.GITHUB_BRANCH || "main";
+  const GITHUB_API = process.env.GITHUB_API_BASE_URL;
+  const username = process.env.GITHUB_USERNAME;
+  const token = process.env.GITHUB_DEPLOYMENT_TOKEN;
+  const branch = process.env.GITHUB_BRANCH;
+  const DEPLOYED_WEBSITE_BASE_URL = process.env.DEPLOYED_WEBSITE_BASE_URL;
   const encodedContent = Buffer.from(htmlContent).toString("base64");
-  const DEPLOYED_WEBSITE_BASE_URL =
-    process.env.DEPLOYED_WEBSITE_BASE_URL || "https://shyraweb.github.io/";
 
   try {
     // Step 1: Create GitHub Repository

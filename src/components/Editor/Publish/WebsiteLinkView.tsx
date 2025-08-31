@@ -61,7 +61,7 @@ export default function WebsiteLinkView({ onClose }: { onClose: () => void }) {
           <Input
             type="text"
             placeholder="live website link"
-            value={publishedURL.at(-1)}
+            value={publishedURL[0]}
           />
           <Button
             type="submit"
