@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ShyRA Web - AI Website Builder",
+  title: "ShyRa Web - AI Website Builder",
   description: "Build stunning websites effortlessly with ShyRA Web, the AI-powered website builder that transforms your ideas into reality in minutes.",
 };
 
